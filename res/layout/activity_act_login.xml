@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood"
+    tools:context=".actLogin">
+
+    <Button
+        android:id="@+id/actLogoutButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="8dp"
+        android:background="#efeff9"
+        android:elevation="10dp"
+        android:text="@string/actLogoutButton"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/actLoginButton"
+        app:layout_constraintStart_toStartOf="@+id/actLoginButton"
+        app:layout_constraintTop_toBottomOf="@+id/actLoginButton" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/actLoginImgContentDesc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/actLoginUserEditText"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/ghostWhite"
+        android:drawableStart="@drawable/ic_user"
+        android:drawablePadding="8sp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:gravity="center_vertical"
+        android:hint="@string/actLoginUserLabelHint"
+        android:inputType="textPersonName"
+        android:paddingLeft="10sp"
+        android:paddingTop="4dp"
+        android:paddingRight="10sp"
+        android:paddingBottom="4dp"
+        android:selectAllOnFocus="true"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/actLoginPassEditText"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/ghostWhite"
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawablePadding="8sp"
+        android:elevation="10dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/actLoginPassLabelHint"
+        android:inputType="textPassword"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/actLoginUserEditText"
+        app:layout_constraintStart_toStartOf="@+id/actLoginUserEditText"
+        app:layout_constraintTop_toBottomOf="@+id/actLoginUserEditText" />
+
+    <Button
+        android:id="@+id/actLoginButton"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/buttshaperound"
+        android:elevation="10dp"
+        android:fontFamily="monospace"
+        android:text="@string/actLoginButton"
+        android:textAllCaps="false"
+        android:textColor="@color/ghostWhite"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/actLoginPassEditText"
+        app:layout_constraintStart_toStartOf="@+id/actLoginPassEditText"
+        app:layout_constraintTop_toBottomOf="@+id/actLoginPassEditText" />
+
+
+</android.support.constraint.ConstraintLayout>

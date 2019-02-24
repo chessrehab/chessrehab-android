@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#daa520</color>
+    <color name="colorPrimaryDark">#6495ED</color>
+    <color name="colorAccent">#daa520</color>
+    <color name="goldenRod">#daa520</color>
+    <color name="goldenRod50">#80daa520</color>
+    <color name="goldenRod75">#bfdaa520</color>
+    <color name="cornFlowerBlue">#6495ed</color>
+    <color name="ghostWhite">#f8f8ff</color>
+    <color name="gainsboro">#dcdcdc</color>
+    <color name="ghostWhite80">#ccf8f8ff</color>
+    <color name="ghostWhite65">#a6f8f8ff</color>
+    <color name="ghostWhite50">#80f8f8ff</color>
+    <color name="ghostWhite20">#33f8f8ff</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/goldenRod75"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvTitlePromo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:shadowRadius="10"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/ivQueenPromo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bOK"
+        android:layout_width="83dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:text="OK"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/ivQueenPromo"
+        app:layout_constraintStart_toStartOf="@+id/tvTitlePromo"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitlePromo" />
+
+    <Button
+        android:id="@+id/bCancel"
+        android:layout_width="90dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="8dp"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/bOK"
+        app:layout_constraintStart_toEndOf="@+id/bOK"
+        app:layout_constraintTop_toTopOf="@+id/bOK" />
+
+    <ImageView
+        android:id="@+id/ivQueenPromo"
+        android:layout_width="86dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_wifi_white" />
+
+</android.support.constraint.ConstraintLayout>
